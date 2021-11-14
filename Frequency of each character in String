@@ -1,9 +1,9 @@
-word= 'ProgramlamaÖdeviİleriSeviyeVeriYapılarıveObjeleripynb'
+kelime= input('Enter a word')
 liste=list()
 sozluk=dict()
 
 
-for i in word:
+for i in kelime:
     liste.append(i)
 
 
