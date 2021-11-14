@@ -1,0 +1,18 @@
+word= 'ProgramlamaÖdeviİleriSeviyeVeriYapılarıveObjeleripynb'
+liste=list()
+sozluk=dict()
+
+
+for i in word:
+    liste.append(i)
+
+
+for k in liste:
+    if k in sozluk:
+        sozluk[k]+=1
+    else:
+        sozluk[k]=1
+
+
+for i in sozluk.keys():
+    print(i, ':' ,sozluk[i])
