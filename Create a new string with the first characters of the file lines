@@ -2,7 +2,12 @@ class Poem():
 
 
     def __init__(self):
-        with open('C:/Users/user/OneDrive/Masaüstü/Python-Coursera/poem.txt','r',encoding='utf-8') as file:
+        from tkinter.filedialog import askopenfilename
+        file1 = askopenfilename()
+
+        with open(file1, 'r', encoding='utf-8') as file:
+
+
 
             poem=file.read()
             new_string=''
