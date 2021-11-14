@@ -1,0 +1,22 @@
+class Poem():
+
+
+    def __init__(self):
+        with open('C:/Users/user/OneDrive/Masaüstü/Python-Coursera/poem.txt','r',encoding='utf-8') as file:
+
+            poem=file.read()
+            new_string=''
+
+            rows= poem.split('\n')
+
+            for i in rows:
+                i=i.strip(' ')
+                new_string+=i[0]
+
+            print(new_string)
+
+
+
+
+
+dosya =Poem()
